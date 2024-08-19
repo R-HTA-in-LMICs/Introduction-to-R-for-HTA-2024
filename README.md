@@ -1,4 +1,4 @@
-# Introduction-to-R-for-HTA 2024: getting to grips with R for health economic decision modelling
+# Introduction-to-R-for-HTA 2024: getting to grips with R for basic survival analysis and health economic analysis
 
 <img src="img/logo.png" width="260" align="right" />
 <br/>
