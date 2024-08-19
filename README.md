@@ -3,25 +3,27 @@
 <img src="img/logo.png" width="260" align="right" />
 <br/>
 
-This repository stores the code, presentations, and material used in the R-HTA in LMICs introductory 2024tutorial. The following sections provide a breakdown of the primary documents and guidance on how to use them for your own personal training. The tutorial is based on several open-source frameworks for basic survival analysis in R.
+This repository stores the code, presentations, and material used in the R-HTA in LMICs introductory 2024 tutorial. The following sections provide a breakdown of the primary documents and guidance on how to use them for your own personal training. The tutorial is based on several open-source frameworks for basic survival analysis in R.
 
 ## Navigation
 
-The [`R`](https://github.com/R-HTA-in-LMICs/Introduction-to-R-for-HTA-2024/tree/main/R) folder includes the R scripts of for basic data cleaning and initial statistical tests for the primary survuval analysis.
+The [`R`](https://github.com/R-HTA-in-LMICs/Introduction-to-R-for-HTA-2024/tree/main/R) folder includes the R scripts of for basic data cleaning and initial statistical tests for the primary survival analysis. You can find the survival data which us ysed for the analysis in the [`data`](https://github.com/R-HTA-in-LMICs/Introduction-to-R-for-HTA-2024/tree/main/data) folder.
 
-The [`excel`](https://github.com/R-HTA-in-LMICs/Introduction-to-R-for-HTA-2023/tree/main/excel) folder includes the original model's solution template, developed in Excel, provided by Oxford's [Health Economics Research Centre (HERC)](https://www.herc.ox.ac.uk/downloads/decision-modelling-for-health-economic-evaluation).
-
-The [`analysis`](https://github.com/R-HTA-in-LMICs/Introduction-to-R-for-HTA-2023/tree/main/analysis) folder includes the secondary R script that produces the economic analysis from the results of the Markov model.
+The [`analysis`](https://github.com/R-HTA-in-LMICs/Introduction-to-R-for-HTA-2024/tree/main/analysis) folder includes the secondary R script that produces the economic analysis from the results of the basic survival analysis.
 
 ## Preliminaries
 
--  Install `devtools` to install [`darthtools`](https://github.com/DARTH-git/darthtools), which is an R package from [DARTH's GitHub](https://github.com/DARTH-git). See below:
+- Install `survival` and `survminer` from [CRAN](https://cran.r-project.org), which are R packages used for survival analysis. Then, install `devtools` to install the [`darthtools`](https://github.com/DARTH-git/darthtools) package, which is an R package from [DARTH's GitHub](https://github.com/DARTH-git). See below:
 
 ```{r, eval=FALSE}
-# Install release version from CRAN
+# For the survival analysis, install the following packages from CRAN
+install.packages("survival")
+install.packages("survminer")
+
+# Install devtools from CRAN
 install.packages("devtools")
 
-# Or install development version from GitHub
+# Or, if the CRAN version fails, install development version from GitHub
 # devtools::install_github("r-lib/devtools")
 ```
 
