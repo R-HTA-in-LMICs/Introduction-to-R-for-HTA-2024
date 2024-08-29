@@ -1,7 +1,6 @@
 # Introduction-to-R-for-HTA 2024: getting to grips with R for basic survival analysis and health economic analysis
 
-<img src="img/logo.png" width="260" align="right" />
-<br/>
+<img src="img/logo.png" width="260" height="200" align="right"/>
 
 This repository stores the code, presentations, and material used in the R-HTA in LMICs introductory 2024 tutorial.
 
@@ -15,7 +14,7 @@ The [`analysis`](https://github.com/R-HTA-in-LMICs/Introduction-to-R-for-HTA-202
 
 ## Preliminaries
 
-- Install `survival`, `survminer`, `broom`, and `ggplot2` from [CRAN](https://cran.r-project.org), which are R packages used for survival analysis. Then, install `devtools` to install the [`darthtools`](https://github.com/DARTH-git/darthtools) package, which is an R package from [DARTH's GitHub](https://github.com/DARTH-git). See below:
+-   Install `survival`, `survminer`, `broom`, and `ggplot2` from [CRAN](https://cran.r-project.org), which are R packages used for survival analysis. Then, install `devtools` to install the [`darthtools`](https://github.com/DARTH-git/darthtools) package, which is an R package from [DARTH's GitHub](https://github.com/DARTH-git). See below:
 
 ```{r, eval=FALSE}
 # For the survival analysis, install the following packages from CRAN
@@ -25,7 +24,7 @@ install.packages("broom")
 install.packages("ggplot2")
 ```
 
-- then install `darthtools` using `devtools`
+-   then install `darthtools` using `devtools`
 
 ```{r, eval=FALSE}
 # Install devtools from CRAN
@@ -37,8 +36,7 @@ devtools::install_github("DARTH-git/darthtools")
 
 ## Citations
 
-For syntax consistency, we follow the R syntax framework developed by the DARTH group:
--   Alarid-Escudero F, Krijkamp EM, Pechlivanoglou P, Jalal HJ, Kao SYZ, Yang A, Enns EA. [A Need for Change! A Coding Framework for Improving Transparency in Decision Modeling](https://link.springer.com/article/10.1007/s40273-019-00837-x). [PharmacoEconomics](https://www.springer.com/journal/40273), 2190;37(11):1329--1339. <https://doi.org/10.1007/s40273-019-00837-x>
+For syntax consistency, we follow the R syntax framework developed by the DARTH group: - Alarid-Escudero F, Krijkamp EM, Pechlivanoglou P, Jalal HJ, Kao SYZ, Yang A, Enns EA. [A Need for Change! A Coding Framework for Improving Transparency in Decision Modeling](https://link.springer.com/article/10.1007/s40273-019-00837-x). [PharmacoEconomics](https://www.springer.com/journal/40273), 2190;37(11):1329--1339. <https://doi.org/10.1007/s40273-019-00837-x>
 
 # Additional Information
 
