@@ -9,30 +9,29 @@ The following sections provide a breakdown of the primary documents and guidance
 
 ## Navigation
 
-The [`R`](https://github.com/R-HTA-in-LMICs/Introduction-to-R-for-HTA-2024/tree/main/R) folder includes the R scripts of for basic data cleaning and initial statistical tests for the primary survival analysis. You can find the survival data which us ysed for the analysis in the [`data`](https://github.com/R-HTA-in-LMICs/Introduction-to-R-for-HTA-2024/tree/main/data) folder.
+The [`R`](https://github.com/R-HTA-in-LMICs/Introduction-to-R-for-HTA-2024/tree/main/R) folder includes the code script `I2r_Aug24` used to help you get to grips with R. For those interested, there is a secondary `extrapolation.R` script which provides a brief example of survival extrapolation in preparation for the intermediate workshop. The [`data`](https://github.com/R-HTA-in-LMICs/Introduction-to-R-for-HTA-2024/tree/main/data) folder stores any relevant raw data used during the tutorial.
 
-The [`analysis`](https://github.com/R-HTA-in-LMICs/Introduction-to-R-for-HTA-2024/tree/main/analysis) folder includes the secondary R script that produces the economic analysis from the results of the basic survival analysis.
+The [`analysis`](https://github.com/R-HTA-in-LMICs/Introduction-to-R-for-HTA-2024/tree/main/analysis) folder stores the primary code script used during the tutorial, illustrating how to generate Kaplan-Meier and Cox models.
 
 ## Preliminaries
 
-- Install `survival` and `survminer` from [CRAN](https://cran.r-project.org), which are R packages used for survival analysis. Then, install `devtools` to install the [`darthtools`](https://github.com/DARTH-git/darthtools) package, which is an R package from [DARTH's GitHub](https://github.com/DARTH-git). See below:
+- Install `survival`, `survminer`, `broom`, and `ggplot2` from [CRAN](https://cran.r-project.org), which are R packages used for survival analysis. Then, install `devtools` to install the [`darthtools`](https://github.com/DARTH-git/darthtools) package, which is an R package from [DARTH's GitHub](https://github.com/DARTH-git). See below:
 
 ```{r, eval=FALSE}
 # For the survival analysis, install the following packages from CRAN
 install.packages("survival")
 install.packages("survminer")
-
-# Install devtools from CRAN
-install.packages("devtools")
-
-# Or, if the CRAN version fails, install development version from GitHub
-# devtools::install_github("r-lib/devtools")
+install.packages("broom")
+install.packages("ggplot2")
 ```
 
 - then install `darthtools` using `devtools`
 
 ```{r, eval=FALSE}
-# Install development version from GitHub
+# Install devtools from CRAN
+install.packages("devtools")
+
+# Install development DARTH tools package from GitHub
 devtools::install_github("DARTH-git/darthtools")
 ```
 
